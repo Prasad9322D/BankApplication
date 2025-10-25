@@ -23,8 +23,48 @@ public class Main {
             String choice = scanner.nextLine();
 
             switch (choice){
+                case "1" -> openAccount(scanner);
+                case "2" -> deposit(scanner);
+                case "3" -> withdraw(scanner);
+                case "4" -> transfer(scanner);
+                case "5" -> statement(scanner);
+                case "6" -> listAccounts(scanner);
+                case "7" -> searchAccounts(scanner);
                 case "0" -> running = false;
             }
         }
     }
+
+    private static void openAccount(Scanner scanner) {
+        System.out.println("Customer Name: ");
+        String name = scanner.nextLine().trim();
+        System.out.println("Customer email: ");
+        String email = scanner.nextLine().trim();
+        System.out.println("Account Type (SAVING/CURRENT):");
+        String type = scanner.nextLine().trim();
+        System.out.println("Initial deposit (optional, blank for 0) :");
+        String amountStr = scanner.nextLine().trim();
+        Double initial =  Double.valueOf(amountStr);
+
+
+    }
+
+    private static void deposit(Scanner scanner) {
+    }
+
+    private static void withdraw(Scanner scanner) {
+    }
+
+    private static void transfer(Scanner scanner) {
+    }
+
+    private static void statement(Scanner scanner) {
+    }
+
+    private static void listAccounts(Scanner scanner) {
+    }
+
+    private static void searchAccounts(Scanner scanner) {
+    }
+
 }
